@@ -11,6 +11,39 @@
     <title>Pet Shop</title>
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="margin:5px; padding: 5px;">
+        <a class="navbar-brand" style="font-family: cursive; font-size: 27px; padding: 5px;" href="#" >Pet Shop</a>
+        <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link"  style="font-family: arial; font-size: 18px; padding: 5px;" href="{% url 'Home' %}">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="font-family: arial; font-size: 18px; padding: 5px;" href="{% url 'About' %}">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" style="font-family: arial; font-size: 18px; padding: 5px;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Categories
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Dogs</a>
+                <a class="dropdown-item" href="#">Cats</a>
+                <a class="dropdown-item" href="#">Birds</a>
+                <a class="dropdown-item" href="#">Fish</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Other animals</a>
+              </div>
+            </li>
+            <li>
+                <a class="nav-link" style="font-family: arial; font-size: 18px; padding: 5px;" href="#">Contact us <span class="sr-only">(current)</span></a>
+              </li>
+          </ul>
+        </div>
+      </nav>
     {% block content %}
     {% endblock %}
 
