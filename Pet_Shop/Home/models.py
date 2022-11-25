@@ -31,7 +31,7 @@ class Animals(models.Model):
     @property
     def pictureURL(self):
         try:
-            url = self.pictureURL
+            url = self.picture.url
         except:
             url= ''
         return url
