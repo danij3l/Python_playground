@@ -20,7 +20,7 @@ class Animals(models.Model):
     name = models.CharField(max_length=100)
     category = models.CharField(max_length=200)
     picture = models.ImageField(null=True, blank=False)
-    tags = models.CharField(max_length=200)
+    tags = models.CharField(max_length=200) 
     status = models.CharField(
     u'Status', max_length=20,
     choices=STATUS_CHOICES)
